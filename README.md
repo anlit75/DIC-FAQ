@@ -12,9 +12,9 @@
 
 ## 數位設計基本原理
 
-- [卡諾圖化簡](fundamental.md/#1-1)
-- [二補數的-1除以2等於多少](fundamental.md/#1-2)
-- [Flip-Flop、Latch的差異](fundamental.md/#1-3)
+- [卡諾圖化簡](fundamental.md/#卡諾圖化簡)
+- [二補數的-1除以2等於多少](fundamental.md/#二補數的-1除以2等於多少)
+- [Flip-Flop, Latch的差異](fundamental.md/#flip-flop-latch的差異)
 
 ## 時序分析
 
