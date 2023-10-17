@@ -62,17 +62,17 @@
 ## 二補數的-1除以2等於多少
 
 $無號數N(N ≠ 0)，基底（base）r，n位整數的r補數:$
-$$r^n-N$$
+$r^n-N$
 
 1. $(012398)_{10}\ 的10’s\ complement = 10^6 − 012398 = 987602$
 2. $(1101100)_2\ 的2’s\ complement = 2^7 − 1101100 = 0010100$
 
-> 重要性質：$r’s\ complement = (r – 1)’s\ complement + 1$
+> 重要性質：r’s complement = (r – 1)’s complement + 1
 > 
-> Eq. $2's\ complement = 1's\ complement + 1$
+> Eq. 2's complement = 1's complement + 1
 <br>
 
-Q1: $(0101)_2\ 的2's補數的-1除以2=?$
+Q1: $(0101)_2\ 的\ 2's補數的-1除以\ 2=?$
 <details>
     <summary>Answer</summary>
     <pre><code>
@@ -81,7 +81,7 @@ Q1: $(0101)_2\ 的2's補數的-1除以2=?$
     </code></pre>
 </details> <br>
 
-Q2: $(11010)_2\ 的2's補數的-1除以2=?$
+Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
 <details>
     <summary>Answer</summary>
     <pre><code>
@@ -92,4 +92,9 @@ Q2: $(11010)_2\ 的2's補數的-1除以2=?$
 
 ## Flip-Flop, Latch的差異
 
-<br>
+<details>
+    <summary>Answer</summary>
+    <p>
+        Flip-Flop, Latch 都是記憶單元，最主要差異是觸發的機制，Flip-Flop 是邊緣觸發，Latch 則是準位觸發。雖然 Flip-Flop 的面積比 Latch 大很多，但在設計上通常還是會避免使用到 Latch。因為準位觸發對電路 glitch 的敏感性較高，導致電路的低穩定性；而 Flip-Flop 的邊緣觸發只有在觸發時才會有讀寫的動作，在非觸發階段輸入與輸出無關，電路有較高的穩定性和可靠性。
+    </p>
+</details> <br>
