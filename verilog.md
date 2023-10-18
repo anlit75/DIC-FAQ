@@ -10,6 +10,32 @@
 
 ## always @(posedge clk or negedge rst)中有寫negedge rst跟沒寫的差異
 
+<details>
+    <summary>Answer</summary>
+    <p></p>
+</details> <br>
+
+```verilog
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) out <= 0;
+    else out <= in;
+end
+```
+<details>
+    <summary>Schematic</summary>
+    <img src="./img/pos_neg_clk.png">
+</details> <br>
+
+```verilog
+always @(posedge clk) begin
+    if (!rst_n) out <= 0;
+    else out <= in;
+end
+```
+<details>
+    <summary>Schematic</summary>
+    <img src="./img/pos_clk.png">
+</details> <br>
 
 ## case條件沒寫滿會合成什麼電路
 
@@ -92,3 +118,26 @@ endmodule
 
 ## blocking/non blocking差異
 
+```verilog
+// blocking
+ always @(posedge clk) begin
+    b = a;
+    c = b;
+end
+
+// non-blocking
+always @(posedge clk) begin
+    b <= a;
+    c <= b;
+end
+```
+<details>
+    <summary>Answer</summary>
+    <p></p>
+    <h3>blocking: </h3>
+    <img src="./img/blocking.png">
+    <img src="./img/blocking_wave.png">
+    <h3>non-blocking: </h3>
+    <img src="./img/nonblocking.png">
+    <img src="./img/nonblocking_wave.png">
+</details> <br>
