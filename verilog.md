@@ -12,18 +12,8 @@
 
 <details>
     <summary>Answer</summary>
-    <p></p>
-</details> <br>
-
-```verilog
-always @(posedge clk or negedge rst_n) begin
-    if (!rst_n) out <= 0;
-    else out <= in;
-end
-```
-<details>
-    <summary>Schematic</summary>
-    <img src="./img/pos_neg_clk.png">
+    <p>沒寫在 sensitivity list 會是 Synchronous Reset，有寫則是 Asynchronous Reset。</p>
+    <p>Synchronous Reset 在電路合成時會合成沒有復位接腳的FF，並且FF的輸入訊號會跟 Reset 訊號 AND 在一起。Asynchronous Reset 則是直接合成出帶有復位接腳的FF。</p>
 </details> <br>
 
 ```verilog
@@ -34,7 +24,18 @@ end
 ```
 <details>
     <summary>Schematic</summary>
-    <img src="./img/pos_clk.png">
+    <img src="./img/synch_rst.jpg">
+</details> <br>
+
+```verilog
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n) out <= 0;
+    else out <= in;
+end
+```
+<details>
+    <summary>Schematic</summary>
+    <img src="./img/asynch_rst.jpg">
 </details> <br>
 
 ## case條件沒寫滿會合成什麼電路
@@ -141,3 +142,8 @@ end
     <img src="./img/nonblocking.png">
     <img src="./img/nonblocking_wave.png">
 </details> <br>
+
+## Refence
+- [Synchronous & Asynchronous Reset](https://hackmd.io/@jesse1282/B1tgS0q62)
+- [多種時序邏輯always語句的綜合結果與分析](https://zhuanlan.zhihu.com/p/167305718)
+- [Reset信號如何同步？](https://zhuanlan.zhihu.com/p/533949746)

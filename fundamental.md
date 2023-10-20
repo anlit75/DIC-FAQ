@@ -98,3 +98,8 @@ Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
         Flip-Flop, Latch 都是記憶單元，最主要差異是觸發的機制，Flip-Flop 是邊緣觸發，Latch 則是準位觸發。雖然 Flip-Flop 的面積比 Latch 大很多，但在設計上通常還是會避免使用到 Latch。因為準位觸發對電路 glitch 的敏感性較高，導致電路的低穩定性；而 Flip-Flop 的邊緣觸發只有在觸發時才會有讀寫的動作，在非觸發階段輸入與輸出無關，電路有較高的穩定性和可靠性。
     </p>
 </details> <br>
+
+## Refence
+- [Flip-Flop和Latch](https://zhuanlan.zhihu.com/p/58613051)
+- [flipflop和latch以及register的區別](https://www.twblogs.net/a/5b8ad83b2b71775d1ce97a67)
+- [Digital system Class note](https://hackmd.io/@college/HksIhvwtD#128---class-note)
