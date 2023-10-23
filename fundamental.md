@@ -1,9 +1,13 @@
 # 數位設計基本原理
 
-- [數位設計基本原理](#數位設計基本原理)
-  - [卡諾圖化簡](#卡諾圖化簡)
-  - [二補數的-1除以2等於多少](#二補數的-1除以2等於多少)
-  - [Flip-Flop, Latch的差異](#flip-flop-latch的差異)
+- [卡諾圖化簡](#卡諾圖化簡)
+- [二補數的-1除以2等於多少](#二補數的-1除以2等於多少)
+- [Flip-Flop, Latch的差異](#flip-flop-latch的差異)
+- [RCA和CLA有甚麼差異及各自的優缺點](#rca和cla有甚麼差異及各自的優缺點)
+- [cache的功能](#cache的功能)
+- [Direct Memory Access的運作原理](#direct-memory-access的運作原理)
+- [Reference](#reference)
+
 
 ## 卡諾圖化簡
 
@@ -59,6 +63,7 @@
     <code>out = (c & d) + (c & ~d & ~a) + (~c & d & b) + (~c & ~d & a)</code>
 </details> <br>
 
+
 ## 二補數的-1除以2等於多少
 
 $無號數N(N ≠ 0)，基底（base）r，n位整數的r補數:$
@@ -90,6 +95,7 @@ Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
     </code></pre>
 </details> <br>
 
+
 ## Flip-Flop, Latch的差異
 
 <details>
@@ -99,7 +105,21 @@ Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
     </p>
 </details> <br>
 
-## Refence
+
+## RCA和CLA有甚麼差異及各自的優缺點
+
+
+
+## cache的功能
+
+
+
+## Direct Memory Access的運作原理
+
+
+
+## Reference
+- [r補數與(r − 1)補數](http://publish.get.com.tw/bookpre_pdf/U0107A-1.PDF)
 - [Flip-Flop和Latch](https://zhuanlan.zhihu.com/p/58613051)
 - [flipflop和latch以及register的區別](https://www.twblogs.net/a/5b8ad83b2b71775d1ce97a67)
 - [Digital system Class note](https://hackmd.io/@college/HksIhvwtD#128---class-note)

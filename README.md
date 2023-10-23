@@ -10,7 +10,7 @@
   - [專業領域](#專業領域)
   - [其他](#其他)
 
-## 數位設計基本原理
+## [數位設計基本原理](fundamental.md)
 
 - [卡諾圖化簡](fundamental.md/#卡諾圖化簡)
 - [二補數的-1除以2等於多少](fundamental.md/#二補數的-1除以2等於多少)
@@ -19,7 +19,7 @@
 - cache的功能
 - Direct Memory Access的運作原理
 
-## 時序分析
+## [時序分析](timing.md)
 
 - setup/hold time 畫圖解釋
 - 怎麼修setup/hold time
@@ -27,7 +27,7 @@
 - timing violation怎麼處理
 - 從CLK1傳到CLK2為甚麼需要第二級Filp-Flop
 
-## 電路設計和實現
+## [電路設計和實現](circuit-design.md)
 
 - 用MUX設計and邏輯閘
 - 加法器設計
@@ -39,7 +39,7 @@
 - 設計deglitch filter, 將cycle1、2的pulse濾除, 並讓cycle3及以上的pulse通過
 - 每個cycle都會傳入1 bit訊號, 從LSB開始, 當再任意時刻停止傳送, 如何知道data是否可以被7整除
 
-## Verilog相關
+## [Verilog相關](verilog.md)
 
 - [always @(posedge clk or negedge rst)中有寫negedge rst跟沒寫的差異](verilog.md/#always-posedge-clk-or-negedge-rst中有寫negedge-rst跟沒寫的差異)
 - [case條件沒寫滿會合成什麼電路](verilog.md/#case條件沒寫滿會合成什麼電路)
@@ -47,9 +47,10 @@
 - [給code判斷是組合邏輯還是循序邏輯](verilog.md/#給code判斷是組合邏輯還是循序邏輯)
 - [combinational、sequential電路差異](verilog.md/#combinationalsequential電路差異)
 - [blocking/non blocking差異](verilog.md/#blockingnon-blocking差異)
+- 同步和非同步電路差異
 - 除了用*來實現乘法外還有什麼方式可以實現
 
-## IC Design Flow
+## [IC Design Flow](design-flow.md)
 
 - 整條design flow說明
 - 合成要怎麼下constraint才能決定adder要用RCA還是CLA
@@ -64,7 +65,7 @@
 - 說明STA在做什麼
 - STA和DTA的差異
 
-## CDC (Clock Domain Crossing)
+## [CDC (Clock Domain Crossing)](cdc.md)
 
 - CDC怎麼處理
 - Asynchronous FIFO具體怎麼處理CDC問題
