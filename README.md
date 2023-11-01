@@ -12,10 +12,10 @@
 
 ## [數位設計基本原理](fundamental.md)
 
-- [卡諾圖化簡](fundamental.md/#卡諾圖化簡)
-- [二補數的-1除以2等於多少](fundamental.md/#二補數的-1除以2等於多少)
-- [Flip-Flop, Latch的差異](fundamental.md/#flip-flop-latch的差異)
-- RCA和CLA有甚麼差異及各自的優缺點
+- [卡諾圖化簡](./fundamental.md/#卡諾圖化簡)
+- [二補數的-1除以2等於多少](./fundamental.md/#二補數的-1除以2等於多少)
+- [Flip-Flop, Latch的差異](./fundamental.md/#flip-flop-latch的差異)
+- [RCA和CLA有甚麼差異及各自的優缺點](./fundamental.md/#rca和cla有甚麼差異及各自的優缺點)
 - cache的功能
 - Direct Memory Access的運作原理
 
@@ -41,12 +41,12 @@
 
 ## [Verilog相關](verilog.md)
 
-- [always @(posedge clk or negedge rst)中有寫negedge rst跟沒寫的差異](verilog.md/#always-posedge-clk-or-negedge-rst中有寫negedge-rst跟沒寫的差異)
-- [case條件沒寫滿會合成什麼電路](verilog.md/#case條件沒寫滿會合成什麼電路)
-- [case、if else差別](verilog.md/#caseif-else差別)
-- [給code判斷是組合邏輯還是循序邏輯](verilog.md/#給code判斷是組合邏輯還是循序邏輯)
-- [combinational、sequential電路差異](verilog.md/#combinationalsequential電路差異)
-- [blocking/non blocking差異](verilog.md/#blockingnon-blocking差異)
+- [always @(posedge clk or negedge rst)中有寫negedge rst跟沒寫的差異](./verilog.md/#always-posedge-clk-or-negedge-rst中有寫negedge-rst跟沒寫的差異)
+- [case條件沒寫滿會合成什麼電路](./verilog.md/#case條件沒寫滿會合成什麼電路)
+- [case、if else差別](./verilog.md/#caseif-else差別)
+- [給code判斷是組合邏輯還是循序邏輯](./verilog.md/#給code判斷是組合邏輯還是循序邏輯)
+- [combinational、sequential電路差異](./verilog.md/#combinationalsequential電路差異)
+- [blocking/non blocking差異](./verilog.md/#blockingnon-blocking差異)
 - 同步和非同步電路差異
 - 除了用*來實現乘法外還有什麼方式可以實現
 

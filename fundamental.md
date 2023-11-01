@@ -108,6 +108,46 @@ Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
 
 ## RCA和CLA有甚麼差異及各自的優缺點
 
+<details>
+    <summary>Answer</summary>
+    <p>RCA和CLA在設計和性能方面有明顯區別。RCA是串行加法器，每一位的進位信號必須逐位傳播，因此速度較慢，但結構較簡單且需要較少硬體資源。CLA則是平行運算的加法器，可同時計算進位信號，因此速度較快，但電路較複雜且可能消耗較多功耗。</p>
+    <table>
+    <thead>
+        <tr>
+        <th style="width:20%"></th>
+        <th style="width:40%">Ripple-Carry Adder (RCA)</th>
+        <th style="width:40%">Carry-Lookahead Adder (CLA)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>運算速度</td>
+        <td>較慢，進位信號逐位傳遞</td>
+        <td>較快，平行運算進位信號</td>
+        </tr>
+        <tr>
+        <td>延遲</td>
+        <td>較高</td>
+        <td>較低</td>
+        </tr>
+        <tr>
+        <td>硬體資源需求</td>
+        <td>較低</td>
+        <td>較高</td>
+        </tr>
+        <tr>
+        <td>優點</td>
+        <td>結構規則、電路簡單、面積小</td>
+        <td>運算複雜度較低，延遲時間短</td>
+        </tr>
+        <tr>
+        <td>缺點</td>
+        <td>高位元運算需等待低位元運算完成，延遲時間較長</td>
+        <td>電路複雜度較高、面積大</td>
+        </tr>
+    </tbody>
+    </table>
+</details> <br>
 
 
 ## cache的功能
@@ -123,3 +163,5 @@ Q2: $(11010)_2\ 的\ 2's補數的-1除以\ 2=?$
 - [Flip-Flop和Latch](https://zhuanlan.zhihu.com/p/58613051)
 - [flipflop和latch以及register的區別](https://www.twblogs.net/a/5b8ad83b2b71775d1ce97a67)
 - [Digital system Class note](https://hackmd.io/@college/HksIhvwtD#128---class-note)
+- [進位選擇加法器之設計摘要](http://ir.lib.ncut.edu.tw/bitstream/987654321/2326/2/%E9%80%B2%E4%BD%8D%E9%81%B8%E6%93%87%E5%8A%A0%E6%B3%95%E5%99%A8%E4%B9%8B%E8%A8%AD%E8%A8%88.pdf)
+- [加法器的實現及優化](https://www.twblogs.net/a/5d21a78bbd9eee1e5c83bd9b)
